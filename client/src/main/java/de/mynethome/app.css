@@ -1,0 +1,13 @@
+.boxSpacing{
+    -fx-padding: 10 10 10 10;
+}
+
+.root{
+    -fx-background-color:
+        linear-gradient(
+            to bottom right,
+            rgb(9,59,122) 0%,
+            rgb(87,206,248) 100%);
+    -fx-font-size: 16pt;
+    -fx-font-family: "Helvetica";
+}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>de.mynethome</groupId>
+    <artifactId>AfterburnerDolphin</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>combined</module>
+        <module>server</module>
+        <module>server-app</module>
+        <module>shared</module>
+        <module>client</module>
+    </modules>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>exec-maven-plugin</artifactId>
+                    <version>1.2.1</version>
+                    <configuration>
+                        <classpathScope>compile</classpathScope>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>2.5.1</version>
+                    <configuration>
+                        <source>1.7</source>
+                        <target>1.7</target>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.open-dolphin</groupId>
+                <artifactId>dolphin-server</artifactId>
+                <version>${dolphin-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.open-dolphin</groupId>
+                <artifactId>dolphin-combined</artifactId>
+                <version>${dolphin-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.open-dolphin</groupId>
+                <artifactId>dolphin-client</artifactId>
+                <version>${dolphin-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.open-dolphin</groupId>
+                <artifactId>dolphin-client-javafx</artifactId>
+                <version>${dolphin-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.mynethome</groupId>
+                <artifactId>server</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.mynethome</groupId>
+                <artifactId>client</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.mynethome</groupId>
+                <artifactId>shared</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javafx</groupId>
+                <artifactId>javafx</artifactId>
+                <version>2.1</version>
+                <scope>system</scope>
+                <systemPath>${java.home}/lib/jfxrt.jar</systemPath>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <properties>
+        <dolphin-version>0.7</dolphin-version>
+        <javahome>C:\Program Files\Java\jdk1.7.0_07\jre</javahome> <!-- http://youtrack.jetbrains.com/issue/IDEA-16077 -->
+    </properties>
+
+</project>
