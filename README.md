@@ -4,6 +4,8 @@ AfterburnerDolphin
 Simple example project as a showcase to bring OpenDolphin (http://www.open-dolphin.org) and Afterburner.fx (http://afterburner.adam-bien.com) together
 and see if they can benefit from each other.
 
+blog post: http://www.canoo.com/blog/2013/05/17/afterburnerdolphin-effective-enterprise-javafx-development/ 
+
 Setup
 -----
 
@@ -18,7 +20,7 @@ Setup
         * git clone https://github.com/madmarkus/afterburner.fx
         * cd afterburner.fx
         * mvn
-* Load up this project in your IDE (e.g. via the pom.xml)
+* Load up this project in your IDE (e.g. via the pom.xml) or build it with maven.
 
 Run
 ---
