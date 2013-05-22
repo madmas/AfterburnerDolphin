@@ -62,7 +62,7 @@ public class App extends Application {
 
   private static ClientConnector createConnector(ClientDolphin clientDolphin) {
     //running real client server mode.
-    HttpClientConnector connector = new HttpClientConnector(clientDolphin, "http://10.9.13.109:880/AfterburnerDolphin/applicationServlet");
+    HttpClientConnector connector = new HttpClientConnector(clientDolphin, "http://localhost/AfterburnerDolphin/applicationServlet");
     connector.setCodec(new JsonCodec());
     return connector;
   }
