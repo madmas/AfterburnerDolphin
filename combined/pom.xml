@@ -22,7 +22,7 @@
         </dependency>
         <dependency>
             <groupId>de.mynethome</groupId>
-            <artifactId>client</artifactId>
+            <artifactId>AfterburnerDolphin-client</artifactId>
         </dependency>
     </dependencies>
 

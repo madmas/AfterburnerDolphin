@@ -69,7 +69,7 @@
             </dependency>
             <dependency>
                 <groupId>de.mynethome</groupId>
-                <artifactId>client</artifactId>
+                <artifactId>AfterburnerDolphin-client</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
